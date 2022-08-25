@@ -1,38 +1,88 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+body {
+  background: linear-gradient(#806afe36, #eae6f22e);
+  background-repeat: no-repeat;
+  height: 100vh;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
   }
-  to {
-    transform: rotate(360deg);
+  * {
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik", sans-serif;
   }
+  .todo-container{
+    background-color: #02040a;
+    min-height: 500px;
+    padding: 42px;
+    border-radius: 16px;
+
+    border: none;
+    box-shadow: 1px 12px 44px #3851b522;
+  }
+
+.todo-row{
+  display: flex;
+ padding: 10px 15px;
+margin: 10px 10px;
+ background-color:#fffffff2;
+ align-items: center;
+ color: #32285e;
+ font-weight: 600;
+ 
+ justify-content: center;
 }
+  button {
+  padding:6px 26px;
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+  
+  background-color: #757cff;
+  }
+  button:hover{
+    background-color: #3852B5;
+  }
+input{
+background: transparent;
+border: none;
+border-radius: 5px;
+padding: 5px;
+width: 60%;
+color: #ffffff;
+outline: none;
+margin-right:1rem ;
+outline: 2px solid #474a54;
+}
+input:focus{
+  outline: 2.4px solid #3852B5;
+}
+input::placeholder{
+  padding-left: 6px;
+}
+  .icons{
+    padding: 2px;
+    
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+    font-weight: 800;
+  font-size: 22px;
+    justify-content: flex-end;
+  }
+  .remove-todo:hover{
+    transition: 1s ease;
+    color: #ff0000;
+    
+  }
+  .edit-todo:hover{
+    color: #ff008c;
+    transition: 1s ease;
+  }
+  /*todo completed bg-color*/
+  .complete{
+    background-color: #70da90e6;
+  transition: 0.2s ease-in;
+  opacity: 0.6;
+  }
+  .complete:hover{
+    opacity: 1;
+  }
